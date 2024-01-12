@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.4...3.18)
 project(example LANGUAGES CXX)
 find_package(pybind11 REQUIRED)
+set(CMAKE_BUILD_TYPE "Debug")
 pybind11_add_module(example example.cpp)
